@@ -1,0 +1,4 @@
+You have to configure the wallpaper command in hyprland.conf to match your displays and path to the picture:
+
+$wallpaper1 = swaybg -o DP-2 -i ~/Pictures/wall.jpg -m fill
+$wallpaper2 = swaybg -o HDMI-A-1 -i ~/Pictures/wall.jpg -m fill
