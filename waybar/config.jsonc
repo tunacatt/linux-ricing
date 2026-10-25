@@ -1,0 +1,62 @@
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "custom/notifications",
+        "tray"
+    ],
+
+    "custom/launcher": {
+        "format": "⌕",
+        "tooltip": true,
+        "tooltip-format": "Search applications",
+        "on-click": "rofi -show drun"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "●",
+            "default": "●"
+        },
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4]
+        },
+        "disable-scroll": true,
+        "on-click": "activate"
+    },
+
+    "clock": {
+        "format": "{:%H:%M  %a, %d %b}",
+        "tooltip-format": "{:%A, %d %B %Y}",
+        "interval": 60
+    },
+
+    "custom/notifications": {
+        "format": "♧",
+        "tooltip": true,
+        "tooltip-format": "Notifications",
+        "on-click": "swaync-client -t -sw"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
+}
