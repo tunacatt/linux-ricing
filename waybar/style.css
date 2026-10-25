@@ -1,0 +1,73 @@
+
+* {
+    font-family: "Cascadia Code Nerd Font", sans-serif;
+    font-size: 12px;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: #222222;
+    color: #ffffff;
+}
+
+#custom-launcher {
+    color: #ffffff;
+    padding: 0 14px;
+    font-size: 20px;
+}
+
+#custom-launcher:hover {
+    background: #383838;
+}
+
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    color: #777777;
+    background: transparent;
+    padding: 0 5px;
+    margin: 0 1px;
+    border: none;
+    box-shadow: none;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    color: #bbbbbb;
+    background: #383838;
+}
+
+#clock {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+#custom-notifications {
+    color: #cccccc;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+#custom-notifications:hover {
+    color: #ffffff;
+    background: #383838;
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+tooltip {
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 5px;
+}
